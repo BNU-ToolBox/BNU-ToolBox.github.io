@@ -23,7 +23,7 @@
         <img src="./assets/bnu-toolbox.svg" alt="" width="40" height="40">
         <span>
           <strong>BNU-ToolBox</strong>
-          <small>校园学习工具箱</small>
+          <small>校园工具箱</small>
         </span>
       </a>
       <nav aria-label="主要导航">
@@ -43,10 +43,10 @@
             <span class="status-dot" aria-hidden="true"></span>
             Windows 11 · Microsoft Edge
           </div>
-          <h1>让校园学习工具<br><span>更简单一点。</span></h1>
+          <h1>让校园学习生活<br><span>更简单一点。</span></h1>
           <p class="hero-lead">
             BNU-ToolBox 将课程学习、校园网认证与教务选课辅助集中到一个安装即用的桌面应用中，
-            无需配置 Python 环境，也无需手动维护 WebDriver。
+            告别手动刷课抢课，解放你的大脑，专注于更重要的任务吧！
           </p>
           <div class="hero-actions">
             <a class="button button-primary" data-download-link href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
@@ -58,7 +58,6 @@
           <p class="hero-meta">
             <span>约 24 MB</span>
             <span>含 Python 运行时</span>
-            <span>自动维护 EdgeDriver</span>
           </p>
         </div>
 
@@ -94,14 +93,14 @@
                       <span class="mini-icon green">网</span>
                       <strong>校园网认证</strong>
                     </div>
-                    <small>自动识别有线与无线入口</small>
+                    <small>自动进行校园网认证</small>
                   </div>
                   <div class="mini-card">
                     <div>
                       <span class="mini-icon amber">选</span>
                       <strong>教务抢课</strong>
                     </div>
-                    <small>持续轮询课程名额</small>
+                    <small>持续查询课程剩余名额</small>
                   </div>
                 </div>
               </div>
@@ -111,8 +110,8 @@
       </div>
       <div class="container trust-note">
         <p>
-          BNU-ToolBox 是面向北京师范大学校园服务场景的第三方桌面工具，
-          与学校官方无隶属关系。使用前请遵守学校相关平台的使用规则。
+          BNU-ToolBox 是面向北京师范大学校园服务场景的开源工具，仅供测试使用
+          且与学校官方无关系。使用前请遵守学校相关平台的使用规则。
         </p>
       </div>
     </section>
@@ -121,14 +120,14 @@
       <div class="container">
         <div class="section-heading">
           <p class="kicker">核心功能</p>
-          <h2>常用校园工具，集中管理</h2>
-          <p>统一的配置、进度和日志界面，减少在多个网页与工具之间切换。</p>
+          <h2>持续更新中……</h2>
+          <p>统一的配置、进度和日志界面。</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
             <span class="feature-icon indigo">课</span>
             <h3>BNU刷课</h3>
-            <p>统一管理师道云与 SPOC 课程，支持并行获取课程详情、章节筛选、混合并发学习和任务进度展示。</p>
+            <p>统一管理师道云与 SPOC 课程，支持并行获取课程详情、章节筛选、并发学习和任务进度展示。</p>
             <ul>
               <li>按课程、任务或章节选择范围</li>
               <li>服务器观看时长判定</li>
@@ -138,11 +137,11 @@
           <article class="feature-card">
             <span class="feature-icon teal">网</span>
             <h3>校园网认证</h3>
-            <p>自动检测当前网络入口并完成校园网认证，减少重复登录操作。</p>
+            <p>自动检测当前网络入口并完成校园网认证，告别重复登录操作。</p>
             <ul>
               <li>有线与无线入口自动识别</li>
               <li>认证失败自动重试</li>
-              <li>可配置用户级开机自启</li>
+              <li>可配置开机自启</li>
             </ul>
           </article>
           <article class="feature-card">
@@ -152,7 +151,7 @@
             <ul>
               <li>专业课程目录本地缓存</li>
               <li>多课程、多班级候选</li>
-              <li>默认 3 秒的公平轮询间隔</li>
+              <li>挂机轮询名额，有课即锁定</li>
             </ul>
           </article>
         </div>
@@ -163,7 +162,7 @@
       <div class="container split-section">
         <div>
           <p class="kicker">为日常使用而设计</p>
-          <h2>安装完成后，只需要专注任务本身</h2>
+          <h2>使用BNU-ToolBox，让你只需要专注学习本身</h2>
           <p class="section-copy">
             BNU-ToolBox 使用独立的 Windows 桌面界面管理各插件。账号凭据与服务数据保存在当前用户目录，
             应用会检测 Edge 版本并维护匹配的驱动。
@@ -180,7 +179,7 @@
           <p>用于保存配置、缓存与日志，不写入程序安装目录。</p>
           <div class="data-rule"></div>
           <span class="data-label">凭据保护</span>
-          <p>敏感凭据使用本地加密存储，并通过 Windows 文件权限限制访问。</p>
+          <p>敏感凭据使用本地加密存储，并通过 Windows 文件权限限制访问。您的用户信息不会被泄露。</p>
         </aside>
       </div>
     </section>
@@ -204,7 +203,7 @@
             <span class="step-number">02</span>
             <div>
               <h3>配置全局账号</h3>
-              <p>在“全局设置”中填写北师大统一身份认证账号。校园网账号与统一身份认证账号分别配置。</p>
+              <p>在“全局设置”中填写北师大统一身份认证账号。校园网账号与统一身份认证账号分别配置，账号仅加密保存在本地。</p>
             </div>
           </li>
           <li>
@@ -245,7 +244,7 @@
           <div class="requirement-card">
             <span>网络</span>
             <strong>可访问校园服务</strong>
-            <p>首次启动与任务运行期间需要访问北师大相关平台。</p>
+            <p>需要访问北师大相关平台。</p>
           </div>
           <div class="requirement-card">
             <span>安装包</span>
@@ -277,7 +276,7 @@
           </details>
           <details>
             <summary>是否适合直接用于关键任务？</summary>
-            <p>0.0.1 是公开测试版本，建议先使用少量任务验证配置和运行结果，并保留必要的备份。</p>
+            <p>0.0.1 是公开测试版本，建议先使用少量任务验证配置和运行结果，若运行稳定再启动大量任务。</p>
           </details>
         </div>
       </div>
