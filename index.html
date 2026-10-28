@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BNU-ToolBox｜北师大校园学习工具箱</title>
+  <meta name="description" content="BNU-ToolBox 是面向北师大校园学习场景的 Windows 11 桌面工具箱，提供课程学习、校园网认证与教务选课辅助功能。">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:title" content="BNU-ToolBox｜北师大校园学习工具箱">
+  <meta property="og:description" content="安装即用的校园学习桌面工具，聚合 BNU刷课、校园网认证与教务抢课。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/bnu-toolbox.png">
+  <link rel="icon" type="image/svg+xml" href="./assets/bnu-toolbox.svg">
+  <link rel="alternate icon" type="image/x-icon" href="./assets/bnu-toolbox.ico">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="BNU-ToolBox 首页">
+        <img src="./assets/bnu-toolbox.svg" alt="" width="40" height="40">
+        <span>
+          <strong>BNU-ToolBox</strong>
+          <small>校园学习工具箱</small>
+        </span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#features">功能</a>
+        <a href="#guide">使用方法</a>
+        <a href="#requirements">系统要求</a>
+        <a class="nav-download" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">下载</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Windows 11 · Microsoft Edge
+          </div>
+          <h1>让校园学习工具<br><span>更简单一点。</span></h1>
+          <p class="hero-lead">
+            BNU-ToolBox 将课程学习、校园网认证与教务选课辅助集中到一个安装即用的桌面应用中，
+            无需配置 Python 环境，也无需手动维护 WebDriver。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
+              下载 0.0.1 测试版
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary" href="https://github.com/BNU-ToolBox/BNU-ToolBox">查看源码</a>
+          </div>
+          <p class="hero-meta">
+            <span>约 24 MB</span>
+            <span>含 Python 运行时</span>
+            <span>自动维护 EdgeDriver</span>
+          </p>
+        </div>
+
+        <div class="product-visual" aria-hidden="true">
+          <div class="glow glow-one" aria-hidden="true"></div>
+          <div class="glow glow-two" aria-hidden="true"></div>
+          <div class="app-frame">
+            <div class="app-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>BNU-ToolBox</span>
+              <span class="app-version">v0.0.1</span>
+            </div>
+            <div class="app-body">
+              <aside>
+                <img src="./assets/bnu-toolbox.svg" alt="" width="44" height="44">
+                <span class="side-item active">仪表盘</span>
+                <span class="side-item">插件管理</span>
+                <span class="side-item">全局设置</span>
+              </aside>
+              <div class="app-content">
+                <p class="mini-label">已安装 3 个插件</p>
+                <div class="mini-card featured">
+                  <div>
+                    <span class="mini-icon">课</span>
+                    <strong>BNU刷课</strong>
+                  </div>
+                  <small>课程详情、视频学习与互动任务</small>
+                  <div class="progress"><i></i></div>
+                </div>
+                <div class="mini-row">
+                  <div class="mini-card">
+                    <div>
+                      <span class="mini-icon green">网</span>
+                      <strong>校园网认证</strong>
+                    </div>
+                    <small>自动识别有线与无线入口</small>
+                  </div>
+                  <div class="mini-card">
+                    <div>
+                      <span class="mini-icon amber">选</span>
+                      <strong>教务抢课</strong>
+                    </div>
+                    <small>持续轮询课程名额</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container trust-note">
+        <p>
+          BNU-ToolBox 是面向北京师范大学校园服务场景的第三方桌面工具，
+          与学校官方无隶属关系。使用前请遵守学校相关平台的使用规则。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker">核心功能</p>
+          <h2>常用校园工具，集中管理</h2>
+          <p>统一的配置、进度和日志界面，减少在多个网页与工具之间切换。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon indigo">课</span>
+            <h3>BNU刷课</h3>
+            <p>统一管理师道云与 SPOC 课程，支持并行获取课程详情、章节筛选、混合并发学习和任务进度展示。</p>
+            <ul>
+              <li>按课程、任务或章节选择范围</li>
+              <li>服务器观看时长判定</li>
+              <li>师道云测试与互动辅助</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon teal">网</span>
+            <h3>校园网认证</h3>
+            <p>自动检测当前网络入口并完成校园网认证，减少重复登录操作。</p>
+            <ul>
+              <li>有线与无线入口自动识别</li>
+              <li>认证失败自动重试</li>
+              <li>可配置用户级开机自启</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon orange">选</span>
+            <h3>教务抢课</h3>
+            <p>按培养层次、年级、院系和专业获取课程列表，持续轮询可选名额并自动提交。</p>
+            <ul>
+              <li>专业课程目录本地缓存</li>
+              <li>多课程、多班级候选</li>
+              <li>默认 3 秒的公平轮询间隔</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container split-section">
+        <div>
+          <p class="kicker">为日常使用而设计</p>
+          <h2>安装完成后，只需要专注任务本身</h2>
+          <p class="section-copy">
+            BNU-ToolBox 使用独立的 Windows 桌面界面管理各插件。账号凭据与服务数据保存在当前用户目录，
+            应用会检测 Edge 版本并维护匹配的驱动。
+          </p>
+          <div class="benefit-list">
+            <div><span>✓</span><p><strong>无需 Python 环境</strong><br>安装包已包含完整运行时。</p></div>
+            <div><span>✓</span><p><strong>浏览器驱动自动维护</strong><br>减少版本不匹配与手工配置。</p></div>
+            <div><span>✓</span><p><strong>统一配置与日志</strong><br>插件状态和任务进度集中展示。</p></div>
+          </div>
+        </div>
+        <aside class="data-card">
+          <span class="data-label">本地数据目录</span>
+          <code>%LOCALAPPDATA%\BNU-ToolBox</code>
+          <p>用于保存配置、缓存与日志，不写入程序安装目录。</p>
+          <div class="data-rule"></div>
+          <span class="data-label">凭据保护</span>
+          <p>敏感凭据使用本地加密存储，并通过 Windows 文件权限限制访问。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker">快速开始</p>
+          <h2>四步开始使用</h2>
+          <p>建议先完成全局账号配置，再进入具体插件设置任务范围。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <div>
+              <h3>下载并运行安装程序</h3>
+              <p>下载 Windows 安装包，按提示授予管理员权限并完成安装。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div>
+              <h3>配置全局账号</h3>
+              <p>在“全局设置”中填写北师大统一身份认证账号。校园网账号与统一身份认证账号分别配置。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div>
+              <h3>选择插件并设置范围</h3>
+              <p>打开目标插件，选择课程、任务或认证方式；首次运行时留意必要的警告与确认提示。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">04</span>
+            <div>
+              <h3>启动任务并查看进度</h3>
+              <p>启动插件后，可在详情页查看分线程进度、预计剩余时间与运行日志。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="requirements">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker">运行环境</p>
+          <h2>安装前请确认</h2>
+        </div>
+        <div class="requirement-grid">
+          <div class="requirement-card">
+            <span>操作系统</span>
+            <strong>Windows 11 x64</strong>
+            <p>应用针对 Windows 11 构建，并使用管理员权限写入 Program Files。</p>
+          </div>
+          <div class="requirement-card">
+            <span>浏览器</span>
+            <strong>Microsoft Edge</strong>
+            <p>需要已安装 Edge；驱动版本由应用自动检测和维护。</p>
+          </div>
+          <div class="requirement-card">
+            <span>网络</span>
+            <strong>可访问校园服务</strong>
+            <p>首次启动与任务运行期间需要访问北师大相关平台。</p>
+          </div>
+          <div class="requirement-card">
+            <span>安装包</span>
+            <strong>约 24 MB</strong>
+            <p>无需单独安装 Python，也无需手工下载 EdgeDriver。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-layout">
+        <div>
+          <p class="kicker">常见问题</p>
+          <h2>安装与运行说明</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Windows 显示“未知发布者”怎么办？</summary>
+            <p>当前测试版安装包尚未进行代码签名。确认安装包来自本页面或官方 Releases 后，可选择“更多信息”并继续安装。</p>
+          </details>
+          <details>
+            <summary>需要预先安装 Python 或 EdgeDriver 吗？</summary>
+            <p>不需要。安装包已包含 Python 运行时；EdgeDriver 会根据本机 Edge 版本自动获取。</p>
+          </details>
+          <details>
+            <summary>配置和缓存保存在哪里？</summary>
+            <p>统一保存在 <code>%LOCALAPPDATA%\BNU-ToolBox</code>。卸载应用时默认保留这些数据。</p>
+          </details>
+          <details>
+            <summary>是否适合直接用于关键任务？</summary>
+            <p>0.0.1 是公开测试版本，建议先使用少量任务验证配置和运行结果，并保留必要的备份。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section">
+      <div class="container download-card">
+        <img src="./assets/bnu-toolbox.svg" alt="" width="74" height="74">
+        <div>
+          <p class="kicker">开始使用</p>
+          <h2>下载 BNU-ToolBox 0.0.1 测试版</h2>
+          <p>Windows 11 x64 · 安装即用 · 自动维护 EdgeDriver</p>
+        </div>
+        <a class="button button-light" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
+          立即下载
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="./assets/bnu-toolbox.svg" alt="" width="30" height="30">
+        <span>BNU-ToolBox</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/BNU-ToolBox/BNU-ToolBox">源代码</a>
+        <a href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases">版本发布</a>
+        <a href="https://github.com/BNU-ToolBox/BNU-ToolBox/issues">问题反馈</a>
+      </div>
+      <p>第三方校园学习工具，与学校官方无隶属关系。</p>
+    </div>
+  </footer>
+</body>
+</html>
