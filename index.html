@@ -30,7 +30,7 @@
         <a href="#features">功能</a>
         <a href="#guide">使用方法</a>
         <a href="#requirements">系统要求</a>
-        <a class="nav-download" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">下载</a>
+        <a class="nav-download" data-download-link href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">下载</a>
       </nav>
     </div>
   </header>
@@ -49,8 +49,8 @@
             无需配置 Python 环境，也无需手动维护 WebDriver。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
-              下载 0.0.1 测试版
+            <a class="button button-primary" data-download-link href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
+              <span data-download-label>下载 0.0.1 测试版</span>
               <span aria-hidden="true">↓</span>
             </a>
             <a class="button button-secondary" href="https://github.com/BNU-ToolBox/BNU-ToolBox">查看源码</a>
@@ -69,7 +69,7 @@
             <div class="app-bar">
               <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
               <span>BNU-ToolBox</span>
-              <span class="app-version">v0.0.1</span>
+              <span class="app-version">v<span data-release-version>0.0.1</span></span>
             </div>
             <div class="app-body">
               <aside>
@@ -288,10 +288,10 @@
         <img src="./assets/bnu-toolbox.svg" alt="" width="74" height="74">
         <div>
           <p class="kicker">开始使用</p>
-          <h2>下载 BNU-ToolBox 0.0.1 测试版</h2>
+          <h2>下载 BNU-ToolBox <span data-release-version>0.0.1</span> <span data-release-channel>测试版</span></h2>
           <p>Windows 11 x64 · 安装即用 · 自动维护 EdgeDriver</p>
         </div>
-        <a class="button button-light" href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
+        <a class="button button-light" data-download-link href="https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.0.1/BNU-ToolBox-Setup-0.0.1.exe">
           立即下载
           <span aria-hidden="true">↓</span>
         </a>
@@ -313,5 +313,7 @@
       <p>第三方校园学习工具，与学校官方无隶属关系。</p>
     </div>
   </footer>
+  <p class="visually-hidden" id="release-status" aria-live="polite">正在检查最新版本。</p>
+  <script src="./release.js" defer></script>
 </body>
 </html>
