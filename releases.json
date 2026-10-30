@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-30T01:26:09Z",
+  "release": {
+    "tag_name": "v0.1.0",
+    "name": "BNU-ToolBox v0.1.0",
+    "published_at": "2026-10-30T00:52:56Z",
+    "prerelease": true,
+    "draft": false,
+    "html_url": "https://github.com/BNU-ToolBox/BNU-ToolBox/releases/tag/v0.1.0"
+  },
+  "installer": {
+    "name": "BNU-ToolBox-Setup-0.1.0.exe",
+    "size": 25250083,
+    "browser_download_url": "https://github.com/BNU-ToolBox/BNU-ToolBox/releases/download/v0.1.0/BNU-ToolBox-Setup-0.1.0.exe"
+  }
+}
